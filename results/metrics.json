@@ -1,0 +1,361 @@
+{
+  "aois": {
+    "residential": {
+      "label": "Residential, south College Station",
+      "bounds_utm": [
+        758655.0,
+        3386166.0,
+        759655.2,
+        3387166.2
+      ],
+      "crs": "EPSG:32614",
+      "lonlat_bbox": [
+        -96.30284,
+        30.57988,
+        -96.29217,
+        30.58911
+      ],
+      "naip": {
+        "year": 2022,
+        "dates": [
+          "2022-06-12"
+        ],
+        "items": [
+          "tx_m_3009630_ne_14_060_20220612"
+        ],
+        "gsd_m": 0.6
+      },
+      "role": "dev",
+      "n_reference": {
+        "ms_buildings": 645,
+        "osm_buildings": 7
+      },
+      "n_ms_reference_crossing_edge": 21,
+      "buildings": {
+        "sam_auto": {
+          "n_raw_masks": 11368,
+          "ms_buildings_before_regularization": {
+            "f1": 0.7535,
+            "mean_matched_iou": 0.6989,
+            "pixel_iou": 0.5482
+          },
+          "ms_buildings": {
+            "n_pred": 637,
+            "n_ref": 645,
+            "tp": 482,
+            "fp": 155,
+            "fn": 163,
+            "precision": 0.7567,
+            "recall": 0.7473,
+            "f1": 0.752,
+            "mean_matched_iou": 0.6974,
+            "pixel_iou": 0.5437,
+            "pixel_precision": 0.7524,
+            "pixel_recall": 0.6622,
+            "pred_area_m2": 127393.2041,
+            "ref_area_m2": 149597.6939,
+            "area_ratio": 0.8516,
+            "f1_ci95": [
+              0.7058,
+              0.791
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 637
+        },
+        "sam_text": {
+          "n_raw_masks": 985,
+          "ms_buildings_before_regularization": {
+            "f1": 0.7155,
+            "mean_matched_iou": 0.7101,
+            "pixel_iou": 0.4667
+          },
+          "ms_buildings": {
+            "n_pred": 434,
+            "n_ref": 645,
+            "tp": 386,
+            "fp": 48,
+            "fn": 259,
+            "precision": 0.8894,
+            "recall": 0.5984,
+            "f1": 0.7155,
+            "mean_matched_iou": 0.7084,
+            "pixel_iou": 0.4632,
+            "pixel_precision": 0.7634,
+            "pixel_recall": 0.5408,
+            "pred_area_m2": 102522.0334,
+            "ref_area_m2": 149597.6939,
+            "area_ratio": 0.6853,
+            "f1_ci95": [
+              0.6725,
+              0.7562
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 434
+        },
+        "baseline": {
+          "n_raw_masks": 852,
+          "ms_buildings_before_regularization": {
+            "f1": 0.6461,
+            "mean_matched_iou": 0.6842,
+            "pixel_iou": 0.4411
+          },
+          "ms_buildings": {
+            "n_pred": 553,
+            "n_ref": 645,
+            "tp": 391,
+            "fp": 162,
+            "fn": 254,
+            "precision": 0.7071,
+            "recall": 0.6062,
+            "f1": 0.6528,
+            "mean_matched_iou": 0.6798,
+            "pixel_iou": 0.4394,
+            "pixel_precision": 0.7985,
+            "pixel_recall": 0.4942,
+            "pred_area_m2": 89541.941,
+            "ref_area_m2": 149597.6939,
+            "area_ratio": 0.5986,
+            "f1_ci95": [
+              0.6021,
+              0.6995
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 553
+        }
+      },
+      "fields": {}
+    },
+    "agricultural": {
+      "label": "Brazos River bottom farmland",
+      "bounds_utm": [
+        746037.6,
+        3381821.4,
+        747037.8,
+        3382821.6
+      ],
+      "crs": "EPSG:32614",
+      "lonlat_bbox": [
+        -96.43533,
+        30.54338,
+        -96.42467,
+        30.5526
+      ],
+      "naip": {
+        "year": 2022,
+        "dates": [
+          "2022-06-12"
+        ],
+        "items": [
+          "tx_m_3009629_sw_14_060_20220612",
+          "tx_m_3009629_se_14_060_20220612"
+        ],
+        "gsd_m": 0.6
+      },
+      "role": "fields",
+      "n_reference": {
+        "ms_buildings": 1,
+        "osm_buildings": 0
+      },
+      "n_ms_reference_crossing_edge": 0,
+      "buildings": {},
+      "fields": {
+        "sam_auto": {
+          "n_fields": 39,
+          "field_area_ha": 64.55,
+          "vs_cdl_cropland": {
+            "pixel_iou": 0.6252,
+            "pixel_precision": 0.9098,
+            "pixel_recall": 0.6665
+          },
+          "cdl_cropland_ha": 88.11
+        },
+        "sam_text": {
+          "n_fields": 15,
+          "field_area_ha": 42.35,
+          "vs_cdl_cropland": {
+            "pixel_iou": 0.4772,
+            "pixel_precision": 0.9951,
+            "pixel_recall": 0.4783
+          },
+          "cdl_cropland_ha": 88.11
+        }
+      }
+    },
+    "mixed": {
+      "label": "Mixed urban edge, Bryan",
+      "bounds_utm": [
+        753144.6,
+        3393967.2,
+        754144.8,
+        3394967.4
+      ],
+      "crs": "EPSG:32614",
+      "lonlat_bbox": [
+        -96.35834,
+        30.65138,
+        -96.34766,
+        30.66061
+      ],
+      "naip": {
+        "year": 2022,
+        "dates": [
+          "2022-06-12"
+        ],
+        "items": [
+          "tx_m_3009622_sw_14_060_20220612"
+        ],
+        "gsd_m": 0.6
+      },
+      "role": "held-out",
+      "n_reference": {
+        "ms_buildings": 423,
+        "osm_buildings": 35
+      },
+      "n_ms_reference_crossing_edge": 14,
+      "buildings": {
+        "sam_auto": {
+          "n_raw_masks": 9757,
+          "ms_buildings_before_regularization": {
+            "f1": 0.6169,
+            "mean_matched_iou": 0.7121,
+            "pixel_iou": 0.3885
+          },
+          "ms_buildings": {
+            "n_pred": 407,
+            "n_ref": 423,
+            "tp": 256,
+            "fp": 151,
+            "fn": 167,
+            "precision": 0.629,
+            "recall": 0.6052,
+            "f1": 0.6169,
+            "mean_matched_iou": 0.7092,
+            "pixel_iou": 0.3871,
+            "pixel_precision": 0.7152,
+            "pixel_recall": 0.4577,
+            "pred_area_m2": 90245.2499,
+            "ref_area_m2": 143972.7082,
+            "area_ratio": 0.6268,
+            "f1_ci95": [
+              0.5388,
+              0.6814
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 407
+        },
+        "sam_text": {
+          "n_raw_masks": 881,
+          "ms_buildings_before_regularization": {
+            "f1": 0.691,
+            "mean_matched_iou": 0.718,
+            "pixel_iou": 0.3871
+          },
+          "ms_buildings": {
+            "n_pred": 289,
+            "n_ref": 423,
+            "tp": 246,
+            "fp": 43,
+            "fn": 177,
+            "precision": 0.8512,
+            "recall": 0.5816,
+            "f1": 0.691,
+            "mean_matched_iou": 0.714,
+            "pixel_iou": 0.3851,
+            "pixel_precision": 0.7914,
+            "pixel_recall": 0.4286,
+            "pred_area_m2": 76322.8078,
+            "ref_area_m2": 143972.7082,
+            "area_ratio": 0.5301,
+            "f1_ci95": [
+              0.6248,
+              0.7398
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 289
+        },
+        "baseline": {
+          "n_raw_masks": 812,
+          "ms_buildings_before_regularization": {
+            "f1": 0.502,
+            "mean_matched_iou": 0.6824,
+            "pixel_iou": 0.2902
+          },
+          "ms_buildings": {
+            "n_pred": 338,
+            "n_ref": 423,
+            "tp": 192,
+            "fp": 146,
+            "fn": 231,
+            "precision": 0.568,
+            "recall": 0.4539,
+            "f1": 0.5046,
+            "mean_matched_iou": 0.6795,
+            "pixel_iou": 0.289,
+            "pixel_precision": 0.7186,
+            "pixel_recall": 0.3258,
+            "pred_area_m2": 63907.3369,
+            "ref_area_m2": 143972.7082,
+            "area_ratio": 0.4439,
+            "f1_ci95": [
+              0.4207,
+              0.5747
+            ],
+            "method": "spatial block bootstrap, 5x5 blocks, 2000 resamples"
+          },
+          "n_pred": 338
+        }
+      },
+      "fields": {}
+    }
+  },
+  "run": {
+    "device": "NVIDIA GeForce RTX 4080",
+    "torch": "2.6.0+cu124",
+    "python": "3.11.17",
+    "sam_model": "SAM vit_h (sam_vit_h_4b8939.pth)",
+    "text_detector": "IDEA-Research/grounding-dino-base",
+    "building_prompt": "building. house. roof.",
+    "field_prompt": "rectangular field.",
+    "tile_px": 512,
+    "overlap_px": 128,
+    "iou_threshold": 0.5,
+    "building_rules": {
+      "min_area": 40.0,
+      "max_area": 6000.0,
+      "max_ndvi": -0.15,
+      "min_brightness": 90.0,
+      "max_brightness": 165.0,
+      "min_rectangularity": 0.6,
+      "max_elongation": 3.0,
+      "min_solidity": 0.75,
+      "min_score": 0.9
+    },
+    "field_rules": {
+      "min_area": 4000.0,
+      "max_area": 10000000.0,
+      "min_solidity": 0.85,
+      "min_rectangularity": 0.55,
+      "max_elongation": 8.0
+    },
+    "runtime_s": {
+      "load_models": 10.6,
+      "residential/download": 0.5,
+      "residential/sam_auto_buildings": 123.95,
+      "residential/sam_text_buildings": 15.93,
+      "residential/baseline_buildings": 0.68,
+      "agricultural/download": 0.01,
+      "agricultural/sam_auto_fields": 37.04,
+      "agricultural/sam_text_fields": 1.09,
+      "mixed/download": 0.01,
+      "mixed/sam_auto_buildings": 111.38,
+      "mixed/sam_text_buildings": 15.5,
+      "mixed/baseline_buildings": 0.47
+    },
+    "runtime_note": "timings of the last full GPU run; metrics were then recomputed from cached masks with --reuse"
+  }
+}

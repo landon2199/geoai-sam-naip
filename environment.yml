@@ -1,0 +1,35 @@
+# Versions pinned to the environment used for the results in README.md / results/metrics.json.
+name: geoai-sam
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4.6
+  - scipy=1.17.1
+  - scikit-image=0.26.0
+  - opencv=5.0.0
+  - matplotlib=3.11.2
+  - rasterio=1.4.4
+  - rioxarray=0.19.0
+  - geopandas=1.2.0
+  - shapely=2.2.0
+  - pyproj=3.7.2
+  - pystac-client=0.9.1
+  - planetary-computer=1.0.0
+  - odc-stac=0.5.3
+  - requests=2.34.2
+  - pytest=9.1.1
+  - pip
+  - pip:
+      # PyTorch with CUDA 12.4 wheels (use https://download.pytorch.org/whl/cpu without an NVIDIA GPU)
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - torch==2.6.0+cu124
+      - torchvision==0.21.0+cu124
+      # Meta's official Segment Anything package and Hugging Face transformers (Grounding DINO)
+      - segment-anything==1.0
+      - transformers==5.20.2
+      - pillow==13.0.0
+      # Microsoft Building Footprints GeoParquet on Azure Blob (Planetary Computer)
+      - adlfs==2026.8.0
+      - pyarrow==26.0.0
+      - mercantile==1.2.1

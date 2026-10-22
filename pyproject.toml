@@ -1,0 +1,10 @@
+[project]
+name = "samnaip"
+version = "0.1.0"
+description = "Segment Anything on NAIP aerial imagery: buildings and fields, with measured accuracy"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
